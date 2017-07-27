@@ -11,11 +11,10 @@ public class Ferry {
     private Date sailingDate;
     private int ticketPrice;
 
-    // TODO: CLEAN UP STARTER AND SOLUTION VERSIONS
     public Ferry(String destination, Date sailingDate, int ticketPrice) {
         this.destination = destination;
         this.sailingDate = sailingDate;
-        this.ticketPrice = 0; //added bug so this is set to 0 instead of ticketPrice
+        this.ticketPrice = 0;
         ticketSet = new HashSet<>();
     }
 

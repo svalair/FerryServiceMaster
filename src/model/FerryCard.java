@@ -25,16 +25,13 @@ public class FerryCard {
         this.balance = balance;
     }
 
-    // TODO: CLEAN UP STARTER AND SOLUTION VERSIONS
     // REQUIRES: balanceAdded > 0
     // MODIFIES: this
     // EFFECTS: adds balanceAdded to balance available on this card
     public void topUp(int balanceAdded) {
-        //balance += balanceAdded; //correct way
-        balance = balanceAdded; //added bug where we don't add balance, just reset it
+        balance = balanceAdded;
     }
 
-    // TODO: CLEAN UP STARTER AND SOLUTION VERSIONS
     // MODIFIES: this
     // EFFECTS: if this does not have at least ticketPrice available on balance,
     // returns false; otherwise creates a new ticket, adds the ticket to ticket
@@ -49,7 +46,6 @@ public class FerryCard {
 
         Ticket ticket = new Ticket(ferry, owner);
         ferry.addTicket(ticket);
-        //balance -= ticketPrice; //added bug where we don't subtract the ticket price from the balance
         return true;
     }
 
